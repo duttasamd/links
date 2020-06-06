@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Links Registration</title>
+	<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+	<style type="text/css">
+		.container {
+			margin-top: 3%;
+			padding-left : 20%;
+			padding-right: 20%;
+		}
+
+		.bottommargin5 {
+			margin-bottom: 2%;
+		}
+	</style>
+</head>
+<body>
+	<nav class="navbar navbar-dark bg-dark">
+  		<a class="navbar-brand" href="#">links</a>
+	</nav>
+
+	<div class="container">
+		<form>
+			<div class="row bottommargin5">
+				<div class="col">
+				  <input type="text" class="form-control" placeholder="First name">
+				</div>
+				<div class="col">
+				  <input type="text" class="form-control" placeholder="Last name">
+				</div>
+			</div>
+			<div class="row bottommargin5">
+				<div class="col">
+					<input type="text" class="form-control" id="dob" placeholder="Date of Birth" />
+				</div>
+				<div class="col">
+					<select class="form-control">
+						<option>Gender</option>
+						<option>Other</option>
+						<option>Female</option>
+						<option>Male</option>
+					</select>
+				</div>
+			</div>
+			<div class="form-group">
+				<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+				<small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+			</div>
+			<div class="form-group">
+				<input type="password" class="form-control" id="exampleInputConfirmPassword1" placeholder="Confirm Password">
+			</div>
+			<div class="form-check bottommargin5">
+				<input type="checkbox" class="form-check-input" id="exampleCheck1">
+				<label class="form-check-label" for="exampleCheck1">Agree to Terms & Conditions</label>
+			</div>
+			<button type="submit" class="btn btn-primary btn-block">Register</button>
+		</form>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+	  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+	<script type="text/javascript">
+		$('#dob').datepicker();
+	</script>
+</body>
+</html>
